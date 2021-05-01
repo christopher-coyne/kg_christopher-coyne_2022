@@ -4,6 +4,8 @@ let num_dict = {0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five",
 let args = process.argv.slice(2)
 
 args.forEach((val, ind) => {
-  console.log(val);
+  for(const digit of val) {
+    console.log(num_dict[digit])
+  }
 })
 
